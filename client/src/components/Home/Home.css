@@ -1,0 +1,15 @@
+
+.photo {
+  width: 600px;
+  height: 50px;
+  overflow: hide;
+}
+
+.head_bg_img {
+  /* position: absolute;
+  width: 100%;
+  top: -200px; */
+}
+
+.body{background-color: greenyellow;}
+
