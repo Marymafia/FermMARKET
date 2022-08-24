@@ -6,7 +6,6 @@ import { CATEGORIES_CARD } from '../types';
 export const setCurrentCardsAC = (id) => ({ type: CATEGORIES_CARD, payload: id });
 
 export const getCurrentCardsFunc = (id) => async (dispatch) => {
-  // в первый кол бек можем передать аргументы во втором используем dispatch, getState
   try {
     const response = await axios.get(`http://localhost:3000/api/products/${id}`);
     console.log('2', response.data);

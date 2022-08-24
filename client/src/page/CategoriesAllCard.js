@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import CardCategory from '../components/CardCategory/CardCategory';
+import MultipleInteractionCard from '../components/CardCategory/CurrentCard';
 import { getCurrentCardsFunc } from '../redux/actions/CurrentCardsCategoryActions';
 
 export default function CategoriesAllCard() {
@@ -18,7 +19,15 @@ export default function CategoriesAllCard() {
   const products = useSelector((state) => state.products);
   return (
     <div>
-      { products.map((el) => <CardCategory key={el.id} el={el} />)}
+      {/* { products.map((el) => <CardCategory key={el.id} el={el} />)} */}
+      {products.map((el) => (
+        <MultipleInteractionCard
+          key={el.id}
+          photo={el.photo}
+          name={el.name}
+          title={el.title}
+        />
+      ))}
     </div>
   );
 }

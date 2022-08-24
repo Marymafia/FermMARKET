@@ -1,3 +1,18 @@
-.img {
+/* .img {
   border-radius: 20px;
-}
+} */
+/* .scale .MuiCardMedia-img {
+  display: inline-block; /* Строчно-блочный элемент */
+  /* overflow: hidden; Скрываем всё за контуром */
+ /* } */
+ /* .scale .MuiCardMedia-img { */
+  /* transition: 1s; Время эффекта */
+  /* display: block; Убираем небольшой отступ снизу */
+ /* }
+ .scale .MuiCardMedia-img:hover { */
+  /* transform: scale(1.2); Увеличиваем масштаб */
+ /* } */ 
+
+ /* .scale {
+  border-radius: 10px solid red;
+ } */

@@ -24,7 +24,7 @@ function App() {
     dispatch(userCheck());
   }, []);
   return (
-    <div className="app">
+    <div className="app" style={{ width: '100vw' }}>
       <Navbar2 />
       <Logo />
       <Home />
