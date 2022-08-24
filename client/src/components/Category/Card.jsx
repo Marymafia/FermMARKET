@@ -6,21 +6,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
-// import { yellow } from '@mui/material/colors';
-import style from './Category.module.css';
 
 export default function MediaCard({ img, id, name }) {
   const navigate = useNavigate();
   const hadleOnClick = () => {
     navigate(`/${id}`);
   };
-  console.log(style);
   return (
     <Card
       onClick={hadleOnClick}
       className="col-lg-4"
       sx={{
-        maxWidth: 345,
+        maxWidth: 265,
         margin: '1rem',
         transition: 'all .4s ease-in-out',
         '&:hover': {
@@ -30,13 +27,12 @@ export default function MediaCard({ img, id, name }) {
     >
       <CardMedia
         hover
-        className={style.scale}
         component="img"
         height="140"
         image={img}
         alt=""
       />
-      <CardContent className={style.scale}>
+      <CardContent>
         <Typography
           gutterBottom
           variant="h5"

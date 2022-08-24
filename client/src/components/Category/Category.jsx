@@ -15,7 +15,7 @@ export default function Category() {
   return (
     <div className="card-group m-auto">
       <Box sx={{
-        width: '80%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', margin: 'auto',
+        width: '70%', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', margin: 'auto',
       }}
       >
         {categories.map((el) => (
