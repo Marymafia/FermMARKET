@@ -10,11 +10,9 @@ function FavoriteProducts() {
   const dispatch = useDispatch();
   useEffect(() => {
     fetch('http://localhost:3000/api/addBest').then((response) => response.json()).then((data) => {
-      console.log(data);
       dispatch(getBestAC(data));
     }); // надо вынести в Thunk
   }, []);
-  console.log(best);
   return (
     <div className="row">
       {best.map((el) => (
