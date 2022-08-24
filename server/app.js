@@ -12,7 +12,7 @@ const Categoryes = require('./routes/CategoryesAllRouter');
 const CardCategorie = require('./routes/CardsCategoriesRouter');
 const BestRouter = require('./routes/BestRouter');
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 

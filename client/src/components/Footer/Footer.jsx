@@ -12,17 +12,18 @@ function Footer() {
               Ferma-MARKET
             </h1>
 
+            <p>
+              <h2>
+
+                Принимаем к оплате
+              </h2>
+            </p>
             <div>
               <img style={{ width: '70px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Visa_2014.svg/2560px-Visa_2014.svg.png" alt="sss" />
               <img style={{ width: '70px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/2560px-Mastercard-logo.svg.png" alt="sss" />
               <img style={{ width: '70px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mir-logo.svg/1280px-Mir-logo.svg.png" alt="sss" />
 
             </div>
-
-            <h2>
-
-              Принимаем к оплате
-            </h2>
           </div>
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

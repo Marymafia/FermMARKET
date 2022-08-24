@@ -5,8 +5,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
+<<<<<<< HEAD
+  extends: [
+    'airbnb-base',
+=======
   extends: 'airbnb-base',
   overrides: [
+>>>>>>> main
   ],
   parserOptions: {
     ecmaVersion: 'latest',

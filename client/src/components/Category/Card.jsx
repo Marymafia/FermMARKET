@@ -13,15 +13,34 @@ export default function MediaCard({ img, id, name }) {
     navigate(`/${id}`);
   };
   return (
-    <Card sx={{ maxWidth: 370 }}>
+    <Card
+      onClick={hadleOnClick}
+      className="col-lg-4"
+      sx={{
+        maxWidth: 265,
+        margin: '1rem',
+        transition: 'all .4s ease-in-out',
+        '&:hover': {
+          transform: 'scale(1.05)',
+        },
+      }}
+    >
       <CardMedia
+        hover
         component="img"
         height="140"
         image={img}
-        alt="green iguana"
+        alt=""
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{
+            color: 'green',
+          }}
+        >
           {name}
         </Typography>
       </CardContent>

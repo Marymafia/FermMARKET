@@ -6,7 +6,6 @@ import { ALL_CATEGORY } from '../types';
 export const setCategoryAllAC = (categArr) => ({ type: ALL_CATEGORY, payload: categArr });
 
 export const getAllCategoryFunc = () => async (dispatch) => {
-  // в первый кол бек можем передать аргументы во втором используем dispatch, getState
   try {
     const response = await axios.get('http://localhost:3000/api/category');
     console.log('2', response.data);
