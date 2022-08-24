@@ -10,6 +10,7 @@ const CategoryRouter = require('./routes/CategoryRouter');
 const UserRouter = require('./routes/UserRouter');
 const Categoryes = require('./routes/CategoryesAllRouter');
 const CardCategorie = require('./routes/CardsCategoriesRouter');
+const BestRouter = require('./routes/BestRouter');
 
 const PORT = process.env.PORT || 3000;
 
@@ -43,6 +44,7 @@ app.use('/api/user', UserRouter);
 app.use('/api', Categoryes);
 app.use('/api/products', CardCategorie);
 app.use('/api/category', CategoryRouter);
+app.use('/api/addBest', BestRouter);
 
 app.listen(PORT, () => {
   console.log('server start on port ', PORT);

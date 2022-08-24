@@ -25,6 +25,13 @@ function Footer() {
 
             </div>
 
+<<<<<<< HEAD
+=======
+            <h2>
+
+              Принимаем к оплате
+            </h2>
+>>>>>>> main
           </div>
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

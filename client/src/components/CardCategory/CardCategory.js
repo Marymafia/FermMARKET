@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBestThunk } from '../../redux/actions/bestAction';
 
 export default function CardCategory({ el }) {
+  const dispatch = useDispatch();
+
+  const addBest = () => {
+    dispatch(addBestThunk(el));
+  };
   return (
   // <div className="card" style={{ width: '18rem' }}>
   //   <h5 className="card-title">
@@ -23,6 +30,8 @@ export default function CardCategory({ el }) {
             <h5 className="card-title">{el.name}</h5>
             <p className="card-text">{el.title}</p>
             <a>Избранное</a>
+            <button onClick={addBest} type="button" className="btn btn-danger">&#10084;</button>
+
           </div>
         </div>
       </div>
