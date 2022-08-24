@@ -13,7 +13,6 @@ export default function MediaCard({ img, id, name }) {
     navigate(`/${id}`);
   };
   return (
-<<<<<<< HEAD
     <Card
       onClick={hadleOnClick}
       className="col-lg-4"
@@ -26,9 +25,6 @@ export default function MediaCard({ img, id, name }) {
         },
       }}
     >
-=======
-    <Card sx={{ maxWidth: 370 }}>
->>>>>>> main
       <CardMedia
         hover
         component="img"

@@ -24,14 +24,6 @@ function Footer() {
               <img style={{ width: '70px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mir-logo.svg/1280px-Mir-logo.svg.png" alt="sss" />
 
             </div>
-
-<<<<<<< HEAD
-=======
-            <h2>
-
-              Принимаем к оплате
-            </h2>
->>>>>>> main
           </div>
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
