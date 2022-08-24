@@ -1,4 +1,0 @@
-DB_USER = hoziayka
-DB_PASS = 12345
-DB_NAME = FermaMarket
-PORT = 3000 

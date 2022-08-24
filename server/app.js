@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 const express = require('express');
 const morgan = require('morgan');
 const session = require('express-session');
@@ -11,7 +11,7 @@ const UserRouter = require('./routes/UserRouter');
 const Categoryes = require('./routes/CategoryesAllRouter');
 const CardCategorie = require('./routes/CardsCategoriesRouter');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3006;
 
 const app = express();
 
