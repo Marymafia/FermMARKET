@@ -13,7 +13,7 @@ export default function MediaCard({ img, id, name }) {
     navigate(`/${id}`);
   };
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 370 }}>
       <CardMedia
         component="img"
         height="140"

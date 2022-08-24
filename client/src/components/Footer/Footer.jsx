@@ -19,12 +19,10 @@ function Footer() {
 
             </div>
 
-            <p>
-              <h2>
+            <h2>
 
-                Принимаем к оплате
-              </h2>
-            </p>
+              Принимаем к оплате
+            </h2>
           </div>
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
