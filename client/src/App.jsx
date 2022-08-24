@@ -15,6 +15,7 @@ import Contacts from './components/Contacts/Contacts';
 import Lk from './components/Lk/Lk';
 import Home from './components/Home/Home';
 import Logo from './components/Logo/Logo';
+import FavoriteProducts from './components/FavoriteProducts/FavoriteProducts';
 
 function App() {
   const dispatch = useDispatch();
@@ -37,6 +38,8 @@ function App() {
         <Route path="/about" element={<AboutCompany />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/lk" element={<Lk />} />
+        <Route path="/best" element={<FavoriteProducts />} />
+
         <Route component={Error} />
       </Routes>
       <Footer />
