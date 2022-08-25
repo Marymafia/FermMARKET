@@ -20,8 +20,10 @@ router.post('/', async (req, res) => {
   res.json(currBest);
 });
 
-router.delete('/:id', (req, res) => {
-  Favorite.filter((el) => el.id !== req.params.id);
+router.delete('/:id', async (req, res) => {
+  await Favorite.destroy({
+    where: { id: req.params.id },
+  });
   res.sendStatus(200);
   // res.json({success: true})
 });

@@ -1,1 +1,24 @@
-.about{background-color: greenyellow}
+.about{
+    color:black;
+	text-align: center ;
+	margin-top:   10px;
+
+}
+.inmag{
+	margin-top:   50px;
+
+}
+.prod{
+	margin-top:   50px;
+
+}
+.img{ text-align: center;
+	margin: 0 0 20px 0;
+	overflow: hidden;  }
+  .img img{
+    width: 33.3%;
+	display: block;
+	float: left;
+	line-height: 0;
+
+  }  
