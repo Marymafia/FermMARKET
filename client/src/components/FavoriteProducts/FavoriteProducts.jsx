@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getBestAC } from '../../redux/actions/bestAction';
-import MultipleInteractionCard from '../CardCategory/CurrentCard';
+import MultipleInteractionCard from './OneFavorite';
 
 // import OneFavorite from './OneFavorite';
 

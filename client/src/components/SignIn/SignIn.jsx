@@ -20,9 +20,7 @@ export default function SignIn() {
       navigate('/');
     }
   };
-
   return (
-
     <>
       <div className="text-center logo mt-3">
         <h2>Вход в учетную запись</h2>
