@@ -77,7 +77,7 @@ function Footer() {
               <p>
                 <i className="fas fa-print me-4" />
 
-                ул.Петровка 35
+                ул.Петровка 38
               </p>
             </p>
           </div>
