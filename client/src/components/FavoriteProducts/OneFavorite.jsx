@@ -10,6 +10,7 @@ import Favorite from '@mui/icons-material/Favorite';
 import { useDispatch } from 'react-redux';
 
 import DeleteIcon from '@mui/material/Chip';
+import DeleteSharpIcon from '@mui/icons-material/DeleteSharp';
 import { addBestThunk, removeBestThunk } from '../../redux/actions/bestAction';
 
 export default function MultipleInteractionCard({
@@ -45,15 +46,14 @@ export default function MultipleInteractionCard({
         </h3>
       </Typography>
       <Typography level="body2" sx={{ mt: 0.5, mb: 2, color: 'green' }}>
-        <p>{title}</p>
-
-        <h4>
+        <h5>{title}</h5>
+        <h4 href="#multiple-actions" overlay underline="none">
           {price}
           {' '}
           руб/кг
         </h4>
       </Typography>
-      <Button onClick={removeHandler} variant="outlined" startIcon={<DeleteIcon />}>
+      <Button sx={{ mt: 0.5, mb: 2 }} onClick={removeHandler} variant="outlined" startIcon={<DeleteSharpIcon />}>
         Delete
       </Button>
     </Card>

@@ -10,6 +10,7 @@ export const addBestThunk = ({
     headers: {
       'Content-type': 'application/json',
     },
+    credentials: 'include',
     body: JSON.stringify({
       id, name, title, photo, price,
     }),

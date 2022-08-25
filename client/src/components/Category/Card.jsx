@@ -42,7 +42,9 @@ export default function MediaCard({ img, id, name }) {
             color: 'green',
           }}
         >
-          {name}
+          <h3>
+            {name}
+          </h3>
         </Typography>
       </CardContent>
       <CardActions>

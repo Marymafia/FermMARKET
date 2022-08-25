@@ -10,7 +10,8 @@ import { useDispatch } from 'react-redux';
 import { addBestThunk } from '../../redux/actions/bestAction';
 
 export default function MultipleInteractionCard({
-  el, photo, name, title, price,
+  el, photo, name, title,
+  price, address, phone,
 }) {
   const dispatch = useDispatch();
 
@@ -53,7 +54,7 @@ export default function MultipleInteractionCard({
             backgroundColor: 'green',
           }}
         >
-          <Favorite onClick={addBest} />
+          <Favorite />
         </IconButton>
       </CardOverflow>
       <Typography level="h2" sx={{ fontSize: 'md', mt: 2, color: 'Black' }}>
@@ -61,12 +62,34 @@ export default function MultipleInteractionCard({
           {name}
         </h3>
       </Typography>
-      <Typography level="body2" sx={{ mt: 0.5, mb: 2, color: 'green' }}>
+      <Typography
+        level="body2"
+        sx={{
+          mt: 0.5, mb: 2, color: 'green',
+        }}
+      >
         <p>{title}</p>
         <h4>
           {price}
           руб/кг
         </h4>
+      </Typography>
+      <Typography
+        level="body2"
+        sx={{
+          mt: 0.5, mb: 2, color: 'green',
+        }}
+      >
+        <h3>
+          {' '}
+          Где мы находимся:
+          {address}
+        </h3>
+        <h3>
+          {' '}
+          Cвязаться с нами:
+          {phone}
+        </h3>
       </Typography>
     </Card>
   );

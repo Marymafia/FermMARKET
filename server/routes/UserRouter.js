@@ -11,9 +11,16 @@ router.route('/signup')
   .post(async (req, res) => {
     try {
       const {
-        name, email, password, address,
-        phone, role,
+        name, email, password, role,
       } = req.body;
+      let {
+        address,
+        phone,
+      } = req.body;
+      if (role === '2') {
+        phone = '123';
+        address = 'abc';
+      }
       if (name && email && password && address && phone && role) {
         const roles = await Role.findOne({ where: { id: +role } });
         const pass = await bycrypt.hash(password, 10);

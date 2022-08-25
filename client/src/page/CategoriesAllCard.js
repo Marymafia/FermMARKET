@@ -32,6 +32,9 @@ export default function CategoriesAllCard() {
             name={el.name}
             title={el.title}
             el={el}
+            price={el.price}
+            address={el.phone}
+            phone={el.phone}
           />
         ))}
       </Box>
