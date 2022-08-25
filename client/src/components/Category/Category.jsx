@@ -19,7 +19,7 @@ export default function Category() {
       }}
       >
         {categories.map((el) => (
-          <MediaCard id={el.id} img={`http://localhost:3000/${el.img}`} name={el.name} />
+          <MediaCard key={el.id} id={el.id} img={`http://localhost:3000/${el.img}`} name={el.name} />
           // <div className="col-md-4 categories">
           //   <div className="card mx-3 mt-4" style={{ width: '300px' }}>
           //     <img className="card-img-top" src={`http://localhost:3000/${el.img}`} alt="Card" />

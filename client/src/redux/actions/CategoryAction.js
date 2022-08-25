@@ -8,7 +8,7 @@ export const setCategoryAllAC = (categArr) => ({ type: ALL_CATEGORY, payload: ca
 export const getAllCategoryFunc = () => async (dispatch) => {
   try {
     const response = await axios.get('http://localhost:3000/api/category');
-    console.log('2', response.data);
+
     dispatch(setCategoryAllAC(response.data));
   } catch (error) {
     console.log(error);

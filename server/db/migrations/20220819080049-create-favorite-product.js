@@ -7,6 +7,22 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
+      name: {
+
+        type: Sequelize.STRING,
+      },
+      title: {
+
+        type: Sequelize.TEXT,
+      },
+      photo: {
+
+        type: Sequelize.STRING,
+      },
+      price: {
+
+        type: Sequelize.INTEGER,
+      },
       user_id: {
         type: Sequelize.INTEGER,
         references: {

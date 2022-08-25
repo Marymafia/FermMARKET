@@ -31,6 +31,7 @@ export default function CategoriesAllCard() {
             photo={el.photo}
             name={el.name}
             title={el.title}
+            el={el}
           />
         ))}
       </Box>
