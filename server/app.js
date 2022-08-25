@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const session = require('express-session');
@@ -11,6 +11,7 @@ const UserRouter = require('./routes/UserRouter');
 const Categoryes = require('./routes/CategoryesAllRouter');
 const CardCategorie = require('./routes/CardsCategoriesRouter');
 const BestRouter = require('./routes/BestRouter');
+const NewProductSeller = require('./routes/NewProductSeller');
 
 const PORT = process.env.PORT || 3006;
 
@@ -45,6 +46,7 @@ app.use('/api', Categoryes);
 app.use('/api/products', CardCategorie);
 app.use('/api/category', CategoryRouter);
 app.use('/api/addBest', BestRouter);
+app.use('/new', NewProductSeller);
 
 app.listen(PORT, () => {
   console.log('server start on port ', PORT);

@@ -13,11 +13,17 @@ router.post('/', async (req, res) => {
     id, name, title, photo, price,
   } = req.body;
   console.log('>>>>>>>>>>>>>', req.body);
+  const userId = req.session.user?.id;
+  console.log(req.session, 'uuuuuuuuuuuuu');
   const currBest = {
-    id, photo, name, title, price,
+    product_id: id, photo, name, title, price, user_id: userId,
   };
-  await Favorite.create(currBest);
-  res.json(currBest);
+  try {
+    await Favorite.create(currBest);
+    res.json(currBest);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 router.delete('/:id', async (req, res) => {

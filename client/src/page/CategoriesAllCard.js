@@ -33,6 +33,8 @@ export default function CategoriesAllCard() {
             title={el.title}
             el={el}
             price={el.price}
+            address={el.phone}
+            phone={el.phone}
           />
         ))}
       </Box>

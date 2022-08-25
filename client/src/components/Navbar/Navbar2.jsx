@@ -52,6 +52,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar sx={{ backgroundColor: 'green' }} className="navbar" position="static">
+
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <HomeIcon href="/" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
