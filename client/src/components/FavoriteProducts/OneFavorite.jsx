@@ -46,6 +46,7 @@ export default function MultipleInteractionCard({
       </Typography>
       <Typography level="body2" sx={{ mt: 0.5, mb: 2, color: 'green' }}>
         <p>{title}</p>
+
         <h4>
           {price}
           {' '}

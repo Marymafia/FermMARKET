@@ -26,7 +26,8 @@ export default function MediaCard({ img, id, name }) {
       }}
     >
       <CardMedia
-        hover
+        hover={CardMedia ? 1 : 0}
+        to="path/to/page"
         component="img"
         height="140"
         image={img}
