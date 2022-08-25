@@ -9,17 +9,6 @@ export default function CardCategory({ el }) {
     dispatch(addBestThunk(el));
   };
   return (
-  // <div className="card" style={{ width: '18rem' }}>
-  //   <h5 className="card-title">
-  //     {el.name}
-  //   </h5>
-  //   <img src={el.photo} className="card-img-top" alt="..." />
-  //   <div className="card-body">
-  //     <h5 className="card-title">
-  //       {el.title}
-  //     </h5>
-  //   </div>
-  // </div>{{
     <div className="card mb-3" style={{ 'max-width': '540px' }}>
       <div className="row no-gutters">
         <div className="col-md-4">
@@ -31,7 +20,6 @@ export default function CardCategory({ el }) {
             <p className="card-text">{el.title}</p>
             <a>Избранное</a>
             <button onClick={addBest} type="button" className="btn btn-danger">&#10084;</button>
-
           </div>
         </div>
       </div>

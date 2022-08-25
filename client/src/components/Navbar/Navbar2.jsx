@@ -16,6 +16,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './Navbar.css';
+import { userLogout } from '../../redux/actions/userActions';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -41,6 +42,7 @@ function ResponsiveAppBar() {
       navigate('/signin');
     } else
     if (page === 'Выход') {
+      dispatch(userLogout());
       navigate('/');
     } else
     if (page === 'Личный кабинет') {

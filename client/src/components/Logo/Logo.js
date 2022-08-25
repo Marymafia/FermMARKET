@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import style from './Logo.module.css';
 
 export default function Logo() {
   const [screenX, setScreenX] = useState(0);
@@ -15,13 +16,13 @@ export default function Logo() {
   return (
     <div className="row">
       <div
-        className="col text-center logo"
+        className={style.logo}
         style={{
           transform: `translate(${screenY * 0.01}px, ${screenX * 0.01}px)`,
         }}
       >
-        <h2>FERMMARKET</h2>
-        <h2>FERMMARKET</h2>
+        <h2>F  E  R  M - M  A  R  K  E  T</h2>
+        <h2>F  E  R  M - M  A  R  K  E  T</h2>
         {/* <img src="/images/whale.png" width={120} /> */}
       </div>
     </div>

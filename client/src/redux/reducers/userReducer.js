@@ -6,7 +6,7 @@ const userReducer = (state = {}, action) => {
 
   switch (type) {
     case ADD_USER:
-      console.log(payload);
+
       return payload;
     default:
       return state;

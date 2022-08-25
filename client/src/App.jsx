@@ -25,7 +25,7 @@ function App() {
     dispatch(userCheck());
   }, []);
   return (
-    <div className="app">
+    <div className="app" style={{ width: '100vw' }}>
       <Navbar2 />
       <Logo />
       <Home />
@@ -39,7 +39,6 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/lk" element={<Lk />} />
         <Route path="/best" element={<FavoriteProducts />} />
-
         <Route component={Error} />
       </Routes>
       <Footer />

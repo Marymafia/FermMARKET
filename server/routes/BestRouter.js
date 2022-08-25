@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
   const currBest = {
     id, photo, name, title, price,
   };
-  Favorite.create(currBest);
+  await Favorite.create(currBest);
   res.json(currBest);
 });
 
