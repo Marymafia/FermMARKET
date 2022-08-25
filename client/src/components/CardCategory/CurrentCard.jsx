@@ -65,7 +65,6 @@ export default function MultipleInteractionCard({
         <p>{title}</p>
         <h4>
           {price}
-          {' '}
           руб/кг
         </h4>
       </Typography>

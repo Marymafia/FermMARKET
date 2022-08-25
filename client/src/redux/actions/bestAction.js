@@ -17,6 +17,7 @@ export const addBestThunk = ({
   const data = await response.json();
   dispatch(addBestAC(data));
 };
+
 export const removeBestThunk = (id) => async (dispatch) => {
   const response = await fetch(`http://localhost:3000/api/addBest/${id}`, {
     method: 'delete',

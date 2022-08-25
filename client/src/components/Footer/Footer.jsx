@@ -42,9 +42,9 @@ function Footer() {
           </div>
 
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 className="text-uppercase fw-bold mb-4">Контакты</h6>
+            <h6 className="text-uppercase fw-bold  mb-4 ">Контакты</h6>
             <p>
-              <i className="fas fa-home me-3" />
+              <i className="fas a-envelope me-3" />
               {' '}
               © 2022 Ferma-MARKET
               {' '}
@@ -52,17 +52,33 @@ function Footer() {
             </p>
             <p>
               <i className="fas fa-envelope me-3" />
+              <img style={{ width: '20px' }} src="https://cdn-icons-png.flaticon.com/512/481/481659.png" alt="" />
               ferma-market@mail.ru
             </p>
             <p>
               <i className="fas fa-phone me-3" />
               {' '}
+              <img style={{ width: '20px' }} src="https://cdn-icons-png.flaticon.com/512/545/545245.png" alt="" />
               + 7-925-825-24-44
             </p>
             <p>
               <i className="fas fa-print me-3" />
               {' '}
+              <img style={{ width: '20px' }} src="https://cdn-icons-png.flaticon.com/512/545/545245.png" alt="" />
+
               + 7-888-888-88-88
+            </p>
+            <p>
+              <i className="fas fa-print me-3" />
+
+              <img style={{ width: '20px' }} src="https://cdn-icons-png.flaticon.com/512/684/684809.png" alt="" />
+
+              г.Москва
+              <p>
+                <i className="fas fa-print me-4" />
+
+                ул.Петровка 38
+              </p>
             </p>
           </div>
         </div>

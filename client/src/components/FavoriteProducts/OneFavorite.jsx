@@ -8,6 +8,7 @@ import IconButton from '@mui/joy/IconButton';
 import Link from '@mui/joy/Link';
 import Favorite from '@mui/icons-material/Favorite';
 import { useDispatch } from 'react-redux';
+
 import DeleteIcon from '@mui/material/Chip';
 import { addBestThunk, removeBestThunk } from '../../redux/actions/bestAction';
 
@@ -16,7 +17,6 @@ export default function MultipleInteractionCard({
 }) {
   const dispatch = useDispatch();
   const removeHandler = () => {
-    // console.log(id);
     dispatch(removeBestThunk(id));
   };
   return (
